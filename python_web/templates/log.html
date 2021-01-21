@@ -1,0 +1,47 @@
+
+<!-- saved from url=(0055)http://python.itcarlow.ie/ed2/ch05/templates/entry.html -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
+
+<body>
+
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2 align="center"></h2>
+
+<p align="center">Use this form to submit</p>
+
+<table align="center">
+
+<tbody align="center">
+
+<tr>
+<td>Phrase:</td>
+<td><input name="phrase" type="TEXT" width="60"></td>
+</tr>
+
+<tr>
+<td>Letters:</td>
+<td><input name="letters" type="TEXT" value=""></td>
+</tr>
+
+</tbody>
+
+</table>
+
+<p align="center">when you finsh,click:</p>
+
+<p align="center"><a class="btn btn-success" href="./results" role="button">!!!GO!!!</a></p>
+
+<p align="center">if you wanna go back,click:</p>
+<p align="center"><a class="btn btn-success" href="./search" role="button">back</a></p>
+
+
+{% endblock %}
+</body>
+
+</html>

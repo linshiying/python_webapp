@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+{{ the_data }}
+    <table border="1">
+        <tr>
+            {% for titleitem in the_titles %}
+            <td>{{titleitem}}</td>
+            {% endfor %}
+        </tr>
+        
+        {% for row in the_data %}
+        <tr>
+            {% for i in row %}
+            <td>{{ i }}</td>
+            {% endfor %}
+        
+        </tr>
+        {% endfor %}
+    </table>
+
+<p><a class="btn btn-success" href="./search" role="button">返回首页</a></p>
+
+</body>
+</html>

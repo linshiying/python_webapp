@@ -1,0 +1,5 @@
+ImmutableMultiDict([('phrase', 'xiaolin'), ('letters', 'aeiou')])|http://127.0.0.1:5000/|127.0.0.1|xiaolinaeiou
+ImmutableMultiDict([('phrase', 'xiaolin'), ('letters', 'aeiou')])|http://127.0.0.1:5000/|127.0.0.1|xiaolinaeiou
+ImmutableMultiDict([('phrase', 'xiaolin'), ('letters', 'aeiou')])|http://127.0.0.1:5000/|127.0.0.1|xiaolinaeiou
+ImmutableMultiDict([('phrase', 'xiaolin'), ('letters', 'aeiou')])|http://127.0.0.1:5000/|127.0.0.1|xiaolinaeiou
+ImmutableMultiDict([('phrase', 'xiaolin'), ('letters', 'aeiou')])|http://127.0.0.1:5000/|127.0.0.1|xiaolinaeiou

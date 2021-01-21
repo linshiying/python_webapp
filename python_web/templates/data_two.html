@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>数据营地——Data camp</title>
+
+
+    <!-- Le styles -->
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+<style>
+body{ text-align:center;background-color:#F5F5F5} 
+body{font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+</style>
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+</head>
+
+<body>
+<header class="navbar" id="top">
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/search">Data camp</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="/search">首页</a>
+              </li>
+              <li class="">
+                <a href="./pyecharts_1">pyecharts可视化——柱状图</a>
+              </li>
+              <li class="">
+                <a href="/data_one">数据一</a>
+              </li>
+              <li class="active">
+                <a href="/data_two">数据二</a>
+              </li>
+              <li class="">
+                <a href="/data_three">数据三</a>
+              </li>
+              <li class="">
+                <a href="/about">关于</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+
+<br />
+<br />
+
+<br />
+<h2>广州 二级（良）</h2>
+<h5>数据更新时间：2021-01-09 19:00:00</h5>
+<p align="right">数值单位：μg/m3(CO为mg/m3)</p>
+
+
+<div class="table">
+    <table id="detail-data" class="table table-striped table-bordered table-condensed">
+      <thead>
+        <tr>
+          <th>监测点</th>
+          <th>AQI</th>
+          <th>空气质量<br>指数类别</th>
+          <th>首要污染物</th>
+          <th>PM2.5<br>细颗粒物</th>
+          <th>PM10<br>可吸入颗粒物</th>
+          <th>CO<br>一氧化碳</th>
+          <th>NO2<br>二氧化氮</th>
+          <th>O3<br>臭氧1小时平均</th>
+          <th class="O3_8h_dn">O3<br>臭氧8小时平均</th>
+          <th>SO2<br>二氧化硫</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr>
+              <td>广雅中学</td>
+              <td>64</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>30</td>
+              <td>77</td>
+              <td>0.3</td>
+              <td>66</td>
+              <td>13</td>
+              <td class="O3_8h_dn">43</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>市五中</td>
+              <td>56</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>26</td>
+              <td>62</td>
+              <td>0.5</td>
+              <td>54</td>
+              <td>22</td>
+              <td class="O3_8h_dn">52</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>天河职幼</td>
+              <td>_</td>
+              <td></td>
+
+                <td>_</td>
+
+              <td>_</td>
+              <td>_</td>
+              <td>_</td>
+              <td>_</td>
+              <td>_</td>
+              <td class="O3_8h_dn">_</td>
+              <td>_</td>
+            </tr>
+            <tr>
+              <td>广东商学院</td>
+              <td>53</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>23</td>
+              <td>55</td>
+              <td>0.4</td>
+              <td>49</td>
+              <td>31</td>
+              <td class="O3_8h_dn">48</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>市八十六中</td>
+              <td>52</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>20</td>
+              <td>54</td>
+              <td>0.4</td>
+              <td>53</td>
+              <td>34</td>
+              <td class="O3_8h_dn">56</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>番禺中学</td>
+              <td>63</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>22</td>
+              <td>75</td>
+              <td>0.6</td>
+              <td>56</td>
+              <td>21</td>
+              <td class="O3_8h_dn">43</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>花都师范</td>
+              <td>44</td>
+              <td>优</td>
+
+                <td>_</td>
+
+              <td>17</td>
+              <td>44</td>
+              <td>0.6</td>
+              <td>43</td>
+              <td>39</td>
+              <td class="O3_8h_dn">60</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>市监测站</td>
+              <td>55</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>21</td>
+              <td>59</td>
+              <td>0.5</td>
+              <td>50</td>
+              <td>22</td>
+              <td class="O3_8h_dn">46</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>九龙镇镇龙</td>
+              <td>58</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>24</td>
+              <td>65</td>
+              <td>0.5</td>
+              <td>41</td>
+              <td>42</td>
+              <td class="O3_8h_dn">54</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>麓湖</td>
+              <td>54</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>21</td>
+              <td>57</td>
+              <td>0.5</td>
+              <td>60</td>
+              <td>24</td>
+              <td class="O3_8h_dn">50</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>帽峰山森林公园</td>
+              <td>24</td>
+              <td>优</td>
+
+                <td>_</td>
+
+              <td>10</td>
+              <td>21</td>
+              <td>0.5</td>
+              <td>15</td>
+              <td>75</td>
+              <td class="O3_8h_dn">75</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>体育西</td>
+              <td>54</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>23</td>
+              <td>58</td>
+              <td>0.5</td>
+              <td>47</td>
+              <td>29</td>
+              <td class="O3_8h_dn">54</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>帽峰山森林公园(对照点)</td>
+              <td>44</td>
+              <td>优</td>
+
+                <td>_</td>
+
+              <td>20</td>
+              <td>44</td>
+              <td>0.6</td>
+              <td>29</td>
+              <td>45</td>
+              <td class="O3_8h_dn">65</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>从化街口</td>
+              <td>51</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>26</td>
+              <td>52</td>
+              <td>0.8</td>
+              <td>46</td>
+              <td>35</td>
+              <td class="O3_8h_dn">61</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>白云竹料</td>
+              <td>40</td>
+              <td>优</td>
+
+                <td>_</td>
+
+              <td>17</td>
+              <td>40</td>
+              <td>1.1</td>
+              <td>38</td>
+              <td>44</td>
+              <td class="O3_8h_dn">44</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>白云嘉禾</td>
+              <td>55</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>22</td>
+              <td>59</td>
+              <td>0.6</td>
+              <td>47</td>
+              <td>28</td>
+              <td class="O3_8h_dn">45</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>黄埔科学城</td>
+              <td>53</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>18</td>
+              <td>55</td>
+              <td>0.5</td>
+              <td>67</td>
+              <td>14</td>
+              <td class="O3_8h_dn">52</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>番禺大学城</td>
+              <td>54</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>20</td>
+              <td>57</td>
+              <td>0.5</td>
+              <td>48</td>
+              <td>36</td>
+              <td class="O3_8h_dn">52</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>南沙黄阁</td>
+              <td>62</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>22</td>
+              <td>74</td>
+              <td>0.6</td>
+              <td>75</td>
+              <td>11</td>
+              <td class="O3_8h_dn">43</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>南沙街</td>
+              <td>59</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>22</td>
+              <td>68</td>
+              <td>0.5</td>
+              <td>70</td>
+              <td>5</td>
+              <td class="O3_8h_dn">39</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>花都梯面</td>
+              <td>39</td>
+              <td>优</td>
+
+                <td>_</td>
+
+              <td>14</td>
+              <td>39</td>
+              <td>0.3</td>
+              <td>24</td>
+              <td>47</td>
+              <td class="O3_8h_dn">60</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>从化良口</td>
+              <td>23</td>
+              <td>优</td>
+
+                <td>_</td>
+
+              <td>9</td>
+              <td>23</td>
+              <td>0.4</td>
+              <td>21</td>
+              <td>68</td>
+              <td class="O3_8h_dn">74</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>增城荔城</td>
+              <td>52</td>
+              <td>良</td>
+
+                  <td>颗粒物(PM10)</td>
+
+              <td>21</td>
+              <td>53</td>
+              <td>0.7</td>
+              <td>52</td>
+              <td>10</td>
+              <td class="O3_8h_dn">49</td>
+              <td>9</td>
+            </tr>
+      </tbody>
+    </table>
+  </div>
+  
+        <div class="alert alert-success" role="alert">
+        <strong>Well done!</strong> You successfully read this important alert message.
+      </div>
+  <br />
+            <div class="jumbotron">
+            <h2>空气质量情况</h2>
+            <p class="lead">首要污染物： 颗粒物(PM10)<br />
+               对健康影响情况： 空气质量可接受,但某些污染物可能对极少数异常敏感人群健康有较弱影响<br />
+               建议采取的措施： 极少数异常敏感人群应减少户外活动</p>
+               
+<br />
+        <div class="jumbotron">
+
+        
+        <p>
+           <a class="btn btn-success" href="./data_one" role="button">上一篇</a>
+           <a class="btn btn-success" href="./data_three" role="button">下一篇</a>
+        </p>
+        
+        <p><a class="btn btn-xs btn-default" href="#top" role="button">回到顶部</a></p>
+        
+        </div>
+</body>
+</html>
